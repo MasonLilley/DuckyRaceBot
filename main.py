@@ -29,8 +29,7 @@ def solve_current_question():
 
 #     for x in range(4):
 #         ssa = capture_screen(answer_regions[x])
-#         ssa.save("ssa.png")
-#         extAns = pytesseract.image_to_string("ssa.png", config=custom_config).strip()
+#         extAns = pytesseract.image_to_string(ssa, config=custom_config).strip()
 
 #         print("X:",x)
 #         print("EXTANS:",extAns)
@@ -41,5 +40,5 @@ def solve_current_question():
 
 # while True:
 #         solve_current_question()
-#         time.sleep(3)
+#         time.sleep(0.5)
 solve_current_question()
