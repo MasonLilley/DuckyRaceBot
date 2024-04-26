@@ -63,10 +63,6 @@ def solve_current_question():
         ssa.save("ssa"+str(x)+".png")
         extAns = pytesseract.image_to_string("ssa.png", config=custom_config).strip()
 
-
-
-
-
 #     for x in range(4):
 #         ssa = capture_screen(answer_regions[x])
 #         ssa.save("ssa.png")
