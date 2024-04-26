@@ -1,9 +1,12 @@
 import pyautogui
 import pytesseract
 import time
+import random
 
 import masonConstents as c
 # import maxConstents as c
+
+botDetectionPrevention = False
 
 custom_config = r'--oem 3 --psm 6 outputbase digits'
 
@@ -40,5 +43,8 @@ def solve_current_question():
 
 # while True:
 #         solve_current_question()
-#         time.sleep(0.5)
+#         if botDetectionPrevention:
+#           time.sleep(0.01 + random.random())
+#         else:
+#           time.sleep(0.5)
 solve_current_question()
