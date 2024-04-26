@@ -5,6 +5,7 @@ import requests
 from PIL import Image
 
 #client = boto3.client('rekognition', region_name='us-east-1')
+custom_config = r'--oem 3 --psm 6 outputbase digits'
 URL = "https://api.ocr.space/parse/image"; 
 APIKEY = "K88051715288957"
 
@@ -31,5 +32,5 @@ screenshot.save("screenshot.png")
 # AWS!!
 #extracted_text = '\n'.join([text['DetectedText'] for text in response['TextDetections']])
 # Tesseract!!
-extracted_text = pytesseract.image_to_string(screenshot)
-print("Extracted text:"+extracted_text)
+extracted_text = pytesseract.image_to_string("screenshot.png", config=custom_config)
+print("Extracted text:"+extracted_text+"END")
