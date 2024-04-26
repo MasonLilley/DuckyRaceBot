@@ -5,7 +5,7 @@ import requests
 from PIL import Image
 
 #client = boto3.client('rekognition', region_name='us-east-1')
-URL = "https://api.ocr.space/parse/image"
+URL = "https://api.ocr.space/parse/image"; 
 APIKEY = "K88051715288957"
 
 def capture_screen(region):
