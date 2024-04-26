@@ -47,4 +47,7 @@ def solve_current_question():
 #           time.sleep(0.01 + random.random())
 #         else:
 #           time.sleep(0.5)
+
 solve_current_question()
+while True:
+    pyautogui.displayMousePosition()

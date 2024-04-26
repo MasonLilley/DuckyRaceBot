@@ -1,33 +1,36 @@
 #first number
-topLeftXfirst = 875
-topLeftYfirst = 650
-bottomRightXfirst = 920
-bottomRightYfirst = 700
+topLeftXfirst = 847
+topLeftYfirst = 660
+bottomRightXfirst = 917
+bottomRightYfirst = 710
 #second number
-topLeftXsecond = 940
-topLeftYsecond = 650
-bottomRightXsecond = 990
-bottomRightYsecond = 710
+topLeftXsecond = 939
+topLeftYsecond = 662
+bottomRightXsecond = 1020
+bottomRightYsecond = 714
 #first answer
-topLeftX1 = 778
-topLeftY1 = 733
-bottomRightX1 = 800
-bottomRightY1 = 770
+topLeftX1 = 770
+topLeftY1 = 735
+bottomRightX1 = 827
+bottomRightY1 = 784
 #second answer
-topLeftX2 = 875
-topLeftY2 = 733
-bottomRightX2 = 900
-bottomRightY2 = 770
+topLeftX2 = 863
+topLeftY2 = 734
+bottomRightX2 = 920
+bottomRightY2 = 785
 #third answer
-topLeftX3 = 960
-topLeftY3 = 733
-bottomRightX3 = 1000
-bottomRightY3 = 770
+topLeftX3 = 953
+topLeftY3 = 737
+bottomRightX3 = 1010
+bottomRightY3 = 786
 #fourth answer
-topLeftX4 = 1050
-topLeftY4 = 733
-bottomRightX4 = 1100
-bottomRightY4 = 770
+topLeftX4 = 1045
+topLeftY4 = 737
+bottomRightX4 = 1102
+bottomRightY4 = 785
+
+
+#Object creations dont change
 Answer1 = (topLeftX1, topLeftY1, (bottomRightX1-topLeftX1), (bottomRightY1-topLeftY1))
 Answer2 = (topLeftX2, topLeftY2, (bottomRightX2-topLeftX2), (bottomRightY2-topLeftY2))
 Answer3 = (topLeftX3, topLeftY3, (bottomRightX3-topLeftX3), (bottomRightY3-topLeftY3))
