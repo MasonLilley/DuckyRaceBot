@@ -4,8 +4,8 @@ import time
 import random
 import os
 
-import masonConstants as c
-# import maxConstents as c
+#import masonConstants as c
+import maxConstents as c
 
 botDetectionPrevention = False
 
@@ -16,7 +16,9 @@ clear = lambda: os.system('cls')
 custom_config = r'--oem 3 --psm 6 outputbase digits'
 
 def capture_screen(region):
-    return pyautogui.screenshot(region=region)
+    shot = pyautogui.screenshot(region=region)
+    #shot.save("View.png")
+    return shot
 
 def read_image(image):
     return pytesseract.image_to_string(image, config=custom_config).strip()
@@ -24,10 +26,18 @@ def read_image(image):
 def solve_current_question():
     global answer
     try:
-        extNum1 = str(abs(int(read_image(capture_screen(c.Region1)))))
-        extNum2 = str(abs(int(read_image(capture_screen(c.Region2)))))
-        capture_screen(c.Region1).save("r1.png")
-        capture_screen(c.Region2).save("r2.png")
+        try:
+            extNum1 = str(abs(int(read_image(capture_screen(c.Region1)))))
+        except ValueError as ve:
+            print("first shot error:"+ve)
+            extNum1 = 7
+        try:
+            extNum2 = str(abs(int(read_image(capture_screen(c.Region2)))))
+        except ValueError as ve:
+            print("second shot error:"+ve)
+            extNum2 = 7
+        #capture_screen(c.Region1).save("r1.png")
+        #capture_screen(c.Region2).save("r2.png")
         print("extNum1:"+extNum1+"ExtNum2:"+extNum2)
         answer = str(int(extNum1) - int(extNum2))
     except ValueError as ve:
@@ -38,7 +48,7 @@ def solve_current_question():
 
     for x in range(4):
         ssa = capture_screen(c.answer_regions[x])
-        ssa.save("SSATEST.png")
+        #ssa.save("SSATEST.png")
         extAns = pytesseract.image_to_string(ssa, config=custom_config).strip()
 
         print("X:",x)
@@ -51,7 +61,7 @@ def solve_current_question():
             return
 
 while True:
-        solve_current_question()
+    solve_current_question()
     #pyautogui.displayMousePosition()
     
 
