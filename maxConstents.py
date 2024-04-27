@@ -1,33 +1,33 @@
 #first number
-topLeftXfirst = 875
-topLeftYfirst = 650
-bottomRightXfirst = 920
-bottomRightYfirst = 700
+topLeftXfirst = 470
+topLeftYfirst = 696
+bottomRightXfirst = 523
+bottomRightYfirst = 743
 #second number
-topLeftXsecond = 940
-topLeftYsecond = 650
-bottomRightXsecond = 990
-bottomRightYsecond = 710
+topLeftXsecond = 558
+topLeftYsecond = 692
+bottomRightXsecond = 596
+bottomRightYsecond = 743
 #first answer
-topLeftX1 = 770
-topLeftY1 = 733
-bottomRightX1 = 800
-bottomRightY1 = 770
+topLeftX1 = 379
+topLeftY1 = 766
+bottomRightX1 = 430
+bottomRightY1 = 816
 #second answer
-topLeftX2 = 875
-topLeftY2 = 733
-bottomRightX2 = 900
-bottomRightY2 = 770
+topLeftX2 = 475
+topLeftY2 = 766
+bottomRightX2 = 518
+bottomRightY2 = 816
 #third answer
-topLeftX3 = 960
-topLeftY3 = 733
-bottomRightX3 = 1000
-bottomRightY3 = 770
+topLeftX3 = 564
+topLeftY3 = 766
+bottomRightX3 = 614
+bottomRightY3 = 816
 #fourth answer
-topLeftX4 = 1050
-topLeftY4 = 733
-bottomRightX4 = 1100
-bottomRightY4 = 770
+topLeftX4 = 661
+topLeftY4 = 766
+bottomRightX4 = 709
+bottomRightY4 = 816
 Answer1 = (topLeftX1, topLeftY1, (bottomRightX1-topLeftX1), (bottomRightY1-topLeftY1))
 Answer2 = (topLeftX2, topLeftY2, (bottomRightX2-topLeftX2), (bottomRightY2-topLeftY2))
 Answer3 = (topLeftX3, topLeftY3, (bottomRightX3-topLeftX3), (bottomRightY3-topLeftY3))

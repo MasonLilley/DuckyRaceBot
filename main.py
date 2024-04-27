@@ -52,5 +52,7 @@ def solve_current_question():
 
 while True:
         solve_current_question()
+    #pyautogui.displayMousePosition()
+    
 
 # solve_current_question()
