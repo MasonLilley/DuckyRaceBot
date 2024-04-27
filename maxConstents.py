@@ -9,7 +9,7 @@ topLeftYsecond = 650
 bottomRightXsecond = 990
 bottomRightYsecond = 710
 #first answer
-topLeftX1 = 778
+topLeftX1 = 770
 topLeftY1 = 733
 bottomRightX1 = 800
 bottomRightY1 = 770

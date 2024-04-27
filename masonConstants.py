@@ -1,12 +1,12 @@
 #first number
-topLeftXfirst = 847
+topLeftXfirst = 850
 topLeftYfirst = 660
 bottomRightXfirst = 917
 bottomRightYfirst = 710
 #second number
 topLeftXsecond = 939
 topLeftYsecond = 662
-bottomRightXsecond = 1020
+bottomRightXsecond = 1050
 bottomRightYsecond = 714
 #first answer
 topLeftX1 = 770
