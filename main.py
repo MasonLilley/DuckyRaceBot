@@ -76,19 +76,19 @@ def solve_current_question():
             j = i + numEnd
             if (not hasVal):
                 try:
-                    int(boxText[i])
+                    int(boxText[j])
                 except:
                     hasVal = False
                 else:
-                    val = int(boxText[i])
+                    val = int(boxText[j])
                     hasVal = True
                 if (hasVal):
                     try: 
-                        int(boxText[i+1])
+                        int(boxText[j+1])
                     except:
                         doubdig = False
                     else:
-                        valtwo = int([i+1])
+                        valtwo = int([j+1])
                         doubdig = True
         
         if (doubdig):
