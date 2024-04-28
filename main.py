@@ -13,7 +13,7 @@ answer = 0
 
 clear = lambda: os.system('cls')
 
-custom_config = r'--oem 3 --psm 6 outputbase digits'
+custom_config = r'--oem 3 --psm 6 outputbase digits tessedit_char_whitelist=12345689'
 
 def capture_screen(region):
     shot = pyautogui.screenshot(region=region)
