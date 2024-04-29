@@ -1,9 +1,7 @@
 import pyautogui
 import pytesseract
 import time
-import random
 import os
-import boto3
 
 #client = boto3.client('textract')
 
@@ -51,10 +49,10 @@ def solve_current_question():
                 pyautogui.press(str(x+1))
                 return
 
+print("hi")
 while True:
     solve_current_question()
     time.sleep(1)
     #pyautogui.displayMousePosition()
     
 
-# solve_current_question()
